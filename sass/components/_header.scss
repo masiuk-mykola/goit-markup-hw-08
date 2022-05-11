@@ -1,0 +1,16 @@
+.header {
+    border-bottom: 1px solid $header-border;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;    
+}
+.header__container {
+    display: flex;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages {
+  display: flex;
+
+}
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+  
+}
+.advantages__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  border-radius: 4px;
+  background-color: $secondary-color;
+}
+.advantages__title {
+  margin-bottom: 10px;
+
+  font-size: $h3-font-size;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantages__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $text-color-light;
+  font-size: $p-font-size;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

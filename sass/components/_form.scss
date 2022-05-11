@@ -1,0 +1,129 @@
+.form__title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.form__list {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.form__item {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+}
+.form__label {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+
+  color: $text-color-light
+}
+.form__input {
+  padding: 12px;
+  padding-left: 42px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+      border: 1px solid $primary-color;
+    }
+}
+.form__icon {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:hover ~ .form__icon,
+.form__input:focus ~ .form__icon {
+  fill: $primary-color;
+}
+.form__input--big {
+  padding: 12px 16px;
+
+  resize: none;
+  height: 120px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+}
+.form__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.checkbox__label {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $text-color-light;
+}
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+.checkbox__icon {
+  margin-right: 10px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $text-color;
+  border-radius: 3px;
+}
+.checkbox:checked + .checkbox__icon {
+  border-color: $primary-color;
+  fill: $primary-color;
+  background-image: url(../images/svg/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+.form__btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  padding-left: 56px;
+  padding-right: 55px;
+
+  color: $text-color-white;
+  background-color: $primary-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  border: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus{
+    background-color: $hero-btn-hover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
