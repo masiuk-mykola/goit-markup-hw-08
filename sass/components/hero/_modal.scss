@@ -1,22 +1,37 @@
 .backdrop.is-hidden .modal {
+  transform: scale(0.8);
+
+  @media screen and (min-width: $tablet) {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+@media screen and (min-width: $desktop) {
   transform: translate(-50%, -50%) scale(0.8);
+}
 }
 
 .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
   padding: 40px;
 
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  height: 609px;
 
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    max-width: 528px;
+    height: 581px;
+}
 }
 .modal-close__btn {
   position: absolute;

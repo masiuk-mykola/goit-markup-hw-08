@@ -1,0 +1,35 @@
+.menu-button {
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  &:hover, &:focus{
+    color: $primary-color;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.icon-cross:hover, .icon-cross:focus{
+  color: $primary-color;
+}
+
+.icon-menu:hover, .icon-menu:focus{
+  color: $primary-color;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross{
+  display: block;
+}
+
+.menu-button.is-open .icon-menu{
+  display: none;
+}

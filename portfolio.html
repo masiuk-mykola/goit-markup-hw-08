@@ -19,38 +19,75 @@
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
-        <nav class="nav">
-          <!-- Додав лого -->
+      <div class="container header__container">
+        <!-- Додав лого -->
 
-          <a class="header-logo header-logo__link" href="./index.html"> Web<span class="header-logo__link--accent">Studio</span></a>
-          <!-- Додав навігацію -->
+        <a class="logo logo__header" href="./index.html">
+          Web<span class="logo__dark">Studio</span></a
+        >
+        <!-- Додав навігацію -->
 
-          <ul class="site-nav">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студия</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/svg/icons.svg#icon-cross"></use>
+            <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon header-contacts__icon--mail">
+                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts__item">
+              <a class="header-contacts__link" href="tel:+380961111111">
+                <svg class="header-contacts__icon header-contacts__icon--phone">
+                  <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link header-contacts__icon" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon-mail">
-                <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link header-contacts__icon" href="tel:+380961111111">
-              <svg class="header-contacts__icon-smartphone">
-                <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="header-socials">
+            <li class="header-social__item">
+              <a href="#" class="header-social__link">Instagram</a>
+            </li>
+            <li class="header-social__item">
+              <a href="#" class="header-social__link">Twitter</a>
+            </li>
+            <li class="header-social__item">
+              <a href="#" class="header-social__link">Facebook</a>
+            </li>
+            <li class="header-social__item">
+              <a href="#" class="header-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -60,11 +97,19 @@
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter__list">
-            <li class="filter__item"><button class="filter__btn filter__btn--active" type="button">Все</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Веб-сайты</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Приложения</button></li>
+            <li class="filter__item">
+              <button class="filter__btn filter__btn--active" type="button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Приложения</button>
+            </li>
             <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="portfolio__list">
@@ -79,8 +124,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -102,8 +148,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -125,8 +172,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -148,8 +196,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -171,8 +220,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -194,8 +244,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -217,8 +268,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -240,8 +292,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -263,8 +316,9 @@
                   />
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -283,13 +337,15 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="adress-wrapper">
-          <a class="footer__logo" href="./index.html"> Web<span class="footer__logo--accent">Studio</span> </a>
+          <a class="footer__logo" href="./index.html">
+            Web<span class="footer__logo--accent">Studio</span>
+          </a>
           <address>
             <ul class="footer-contacts1 list">
               <li class="footer-contacts__item">
                 <a
                   href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                  class="footer-contact  map"
+                  class="footer-contact map"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
@@ -335,7 +391,13 @@
           <b class="mailing-title">Подпишитесь на рассылку</b>
 
           <form class="footer-form">
-            <input class="footer-form__input" type="email" name="email" id="footer-user-email" placeholder="E-mail" />
+            <input
+              class="footer-form__input"
+              type="email"
+              name="email"
+              id="footer-user-email"
+              placeholder="E-mail"
+            />
             <button class="footer-form__btn" type="submit">
               Подписаться
               <svg class="icon-send" width="24" height="24">

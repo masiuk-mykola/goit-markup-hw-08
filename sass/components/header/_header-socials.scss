@@ -1,0 +1,30 @@
+.header-socials {
+  display: flex;
+  margin-top: 64px;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.header-social__item:not(:last-child) {
+  position: relative;
+  margin-right: 20px;
+}
+.header-social__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+
+  height: 1px;
+  width: 22px;
+  background: $text-color-light;
+  transform: rotate(90deg);
+}
+.header-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+  color: $primary-color;
+
+}
+
