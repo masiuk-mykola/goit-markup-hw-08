@@ -84,8 +84,6 @@ ul {
 
 .site-nav {
   display: flex;
-  
-  
 }
 
 .site-nav__item:not(:last-child) {
@@ -104,7 +102,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -127,7 +124,6 @@ ul {
   color: var(--primary-color);
 }
 
-
 .site-nav__link-current {
   color: var(--primary-color);
 }
@@ -136,8 +132,6 @@ ul {
   display: flex;
   align-items: center;
   margin-left: auto;
-  
-
 }
 
 .header-contacts__item:last-child {
@@ -151,7 +145,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
 
   transition-property: color;
   transition-duration: 250ms;
@@ -236,7 +229,6 @@ ul {
   background-color: var(--hero-btn-hover);
 }
 
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -310,7 +302,6 @@ ul {
 
 .form__list {
   margin-bottom: 20px;
-  
 }
 
 .form__item {
@@ -466,8 +457,6 @@ ul {
 
 .advantages__list {
   display: flex;
-  
-
 }
 
 .advantages__item:not(:last-child) {
@@ -524,8 +513,6 @@ ul {
 
 .work__list {
   display: flex;
-  
-
 }
 
 .work__item:not(:last-child) {
@@ -583,8 +570,6 @@ ul {
 
 .team__list {
   display: flex;
-  
-
 }
 
 .team-card__caption {
@@ -625,7 +610,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .social-list__link {
@@ -672,7 +656,6 @@ ul {
 .clients {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .clients__item {
@@ -780,7 +763,6 @@ ul {
 .join-us__social-list {
   margin-top: 20px;
   display: flex;
-  
 }
 
 .join-us__social-link {
@@ -999,4 +981,3 @@ ul {
 .portfolio__link:focus .overlay {
   transform: translatey(-100%);
 }
-

@@ -22,18 +22,10 @@
       <div class="container header__container">
         <!-- Додав лого -->
 
-        <a class="logo logo__header" href="./index.html">
-          Web<span class="logo__dark">Studio</span></a
-        >
+        <a class="logo logo__header" href="./index.html"> Web<span class="logo__dark">Studio</span></a>
         <!-- Додав навігацію -->
 
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
             <use class="icon-cross" href="./images/svg/icons.svg#icon-cross"></use>
             <use class="icon-menu" href="./images/svg/icons.svg#icon-menu"></use>
@@ -47,9 +39,7 @@
                 <a href="./index.html" class="site-nav__link">Студия</a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
-                  >Портфолио</a
-                >
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
               </li>
               <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
@@ -116,17 +106,41 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img1.jpg"
-                    alt="Веб-сайт Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img1-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img1-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img1-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img1-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img1-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img1-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img1-450.jpg"
+                      alt="Веб-сайт Технокряк"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -140,17 +154,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img2.jpg"
-                    alt="Дизайн Постера New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img2-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img2-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img2-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img2-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img2-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img2-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img2-450.jpg"
+                      alt="Дизайн Постера New Orlean vs Golden Star"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -164,17 +203,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img3.jpg"
-                    alt="Приложение Ресторана Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img3-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img3-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img3-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img3-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img3-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img3-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img3-450.jpg"
+                      alt="Приложение Ресторана Seafood"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -188,17 +252,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img4.jpg"
-                    alt="Маркетинг Проекта Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img4-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img4-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img4-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img4-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img4-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img4-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img4-450.jpg"
+                      alt="Маркетинг Проекта Prime"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -212,17 +301,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img5.jpg"
-                    alt="Веб-сайт Проекта Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img5-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img5-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img5-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img5-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img5-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img5-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img5-450.jpg"
+                      alt="Веб-сайт Проекта Boxes"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -236,17 +350,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img6.jpg"
-                    alt="Приложение Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img6-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img6-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img6-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img6-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img6-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img6-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img6-450.jpg"
+                      alt="Приложение Inspiration has no Borders"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -260,17 +399,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img7.jpg"
-                    alt="Дизайн Издания Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img7-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img7-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img7-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img7-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img7-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img7-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img7-450.jpg"
+                      alt="Дизайн Издания Limited Edition"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -284,17 +448,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img8.jpg"
-                    alt="Маркетинг Проекта LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img8-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img8-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img8-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img8-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img8-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img8-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img8-450.jpg"
+                      alt="Маркетинг Проекта LAB"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -308,17 +497,42 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="overlay__box">
-                  <img
-                    class="portfolio__img"
-                    src="./images/portfolio/portfolio-img9.jpg"
-                    alt="Приложение Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/mobile-portfolio/portfolio-img9-450.jpg    1x,
+                        ./images/portfolio/mobile-portfolio/portfolio-img9-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tablet-portfolio/portfolio-img9-354.jpg    1x,
+                        ./images/portfolio/tablet-portfolio/portfolio-img9-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desktop-portfolio/portfolio-img9-370.jpg    1x,
+                        ./images/portfolio/desktop-portfolio/portfolio-img9-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width:769px)"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./images/portfolio/mobile-portfolio/portfolio-img9-450.jpg"
+                      alt="Приложение Growing Business"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+                      позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -337,9 +551,7 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="adress-wrapper">
-          <a class="footer__logo" href="./index.html">
-            Web<span class="footer__logo--accent">Studio</span>
-          </a>
+          <a class="footer__logo" href="./index.html"> Web<span class="footer__logo--accent">Studio</span> </a>
           <address>
             <ul class="footer-contacts1 list">
               <li class="footer-contacts__item">
@@ -391,13 +603,7 @@
           <b class="mailing-title">Подпишитесь на рассылку</b>
 
           <form class="footer-form">
-            <input
-              class="footer-form__input"
-              type="email"
-              name="email"
-              id="footer-user-email"
-              placeholder="E-mail"
-            />
+            <input class="footer-form__input" type="email" name="email" id="footer-user-email" placeholder="E-mail" />
             <button class="footer-form__btn" type="submit">
               Подписаться
               <svg class="icon-send" width="24" height="24">

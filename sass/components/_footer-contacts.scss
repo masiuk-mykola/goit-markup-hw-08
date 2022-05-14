@@ -1,0 +1,68 @@
+.footer {
+  padding: 60px 0;
+  background-color: $footer-color;
+}
+
+.footer-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.adress-wrapper {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-grow: 1;
+    margin-right: 70px;
+  }
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: $primary-color;
+  font-family: $logo-font, sans-serif;
+  font-size: $logo-font-size;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  &--accent {
+    color: $text-color-white;
+  }
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: $p-font-size;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.map {
+  color: $text-color-white;
+}

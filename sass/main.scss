@@ -3,6 +3,9 @@
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './utils/visually-hidden';
+@import './components/section';
+@import './utils/no-padding';
+@import './components/section__title';
 
 @import './components/body';
 @import './components/container';
@@ -19,3 +22,12 @@
 @import './components/hero/modal';
 @import './components/hero/form';
 @import './components/section_advantages';
+@import './components/section-work';
+@import './components/section-team';
+@import './components/section-clients';
+@import './components/footer-contacts';
+@import './components/footer-join-us';
+@import './components/footer-form';
+
+@import "./components/filter";
+@import "./components/portfolio";

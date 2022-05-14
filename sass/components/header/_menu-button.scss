@@ -5,8 +5,9 @@
   margin: 0;
   padding: 0;
   z-index: 2;
-  &:hover, &:focus{
-    color: $primary-color;
+  &:hover,
+  &:focus {
+    fill: $primary-color;
   }
 
   @media screen and (min-width: 767px) {
@@ -14,22 +15,24 @@
   }
 }
 
-.icon-cross:hover, .icon-cross:focus{
-  color: $primary-color;
-}
+// .icon-cross:hover,
+// .icon-cross:focus {
+//   fill: $primary-color;
+// }
 
-.icon-menu:hover, .icon-menu:focus{
-  color: $primary-color;
-}
+// .icon-menu:hover,
+// .icon-menu:focus {
+//   fill: $primary-color;
+// }
 
 .menu-button .icon-cross {
   display: none;
 }
 
-.menu-button.is-open .icon-cross{
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button.is-open .icon-menu{
+.menu-button.is-open .icon-menu {
   display: none;
 }

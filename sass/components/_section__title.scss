@@ -1,0 +1,16 @@
+.section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-size: $h2-font-size;
+  font-weight: 700;
+  line-height: 1.178;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $desktop-h2-font-size;
+    line-height: 1.666;
+    margin-bottom: 50px;
+  }
+}

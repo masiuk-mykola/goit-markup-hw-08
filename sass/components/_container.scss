@@ -1,9 +1,13 @@
 .container {
-  max-width: $mobile;
-  min-width: 320px;
+  // max-width: $mobile;
+  // min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
+  }
 
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
