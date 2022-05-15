@@ -9,18 +9,18 @@
 
 @import './components/body';
 @import './components/container';
-@import './components/header/header';
-@import './components/header/header-container';
-@import './components/header/logo';
-@import './components/header/menu-button';
-@import './components/header/menu-container';
-@import './components/header/nav';
-@import './components/header/header-contacts';
-@import './components/header/header-socials';
-@import './components/hero/hero';
-@import './components/hero/backdrop';
-@import './components/hero/modal';
-@import './components/hero/form';
+@import './components/header';
+@import './components/header-container';
+@import './components/logo';
+@import './components/menu-button';
+@import './components/menu-container';
+@import './components/nav';
+@import './components/header-contacts';
+@import './components/header-socials';
+@import './components/hero';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
 @import './components/section_advantages';
 @import './components/section-work';
 @import './components/section-team';
@@ -29,5 +29,5 @@
 @import './components/footer-join-us';
 @import './components/footer-form';
 
-@import "./components/filter";
-@import "./components/portfolio";
+@import './components/filter';
+@import './components/portfolio';
