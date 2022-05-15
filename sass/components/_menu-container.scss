@@ -1,5 +1,5 @@
 .menu-container {
-  &.is-open{
+  &.is-open {
     display: block;
   }
   @media screen and (max-width: 767px) {
@@ -14,10 +14,10 @@
 
     background-color: #fff;
   }
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-}
+  }
 }

@@ -1349,6 +1349,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    text-align: left;
     margin-right: 70px;
   }
 }
