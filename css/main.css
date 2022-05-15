@@ -365,6 +365,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -389,9 +392,6 @@ body {
   }
 }
 
-.logo__header {
-  margin-right: auto;
-}
 @media screen and (min-width: 768px) {
   .logo__header {
     margin-right: 88px;
@@ -567,6 +567,12 @@ body {
 }
 
 .header-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   font-size: 34px;
   font-weight: 500;
@@ -758,11 +764,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 94px 15px;
+  padding: 93px 15px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -802,8 +809,9 @@ body {
 .modal {
   position: relative;
   padding: 40px;
+  margin: 0 auto;
   max-width: 450px;
-  height: 609px;
+  min-height: 609px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -820,8 +828,7 @@ body {
     top: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
-    max-width: 528px;
-    height: 581px;
+    width: 450px;
   }
 }
 
@@ -936,9 +943,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -984,6 +991,10 @@ body {
   background-image: url(../images/svg/check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+
+.checkbox__link {
+  text-decoration: underline;
 }
 
 .form__btn {
@@ -1245,7 +1256,7 @@ body {
 }
 
 .social-list__icon {
-  fill: #fff;
+  fill: currentColor;
 }
 
 .clients {
@@ -1325,16 +1336,12 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .adress-wrapper {
-    text-align: center;
-    margin-bottom: 60px;
-  }
+.adress-wrapper {
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .adress-wrapper {
-    text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1387,17 +1394,15 @@ body {
 
 .join-us {
   text-align: center;
-  margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .join-us {
-    margin-bottom: 0px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .join-us {
     margin-right: 93px;
-    margin-bottom: 0;
     text-align: left;
   }
 }
@@ -1431,10 +1436,14 @@ body {
   margin-right: 0;
 }
 
+.social-list__icon--gray {
+  fill: #fff;
+}
+
 .mailing {
   text-align: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .mailing {
     margin-top: 60px;
   }
@@ -1482,6 +1491,11 @@ body {
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 .footer-form__input:hover, .footer-form__input:focus {
   border: 1px solid #2196f3;

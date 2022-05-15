@@ -18,6 +18,9 @@
   }
 }
 .header-contacts__link {
+  display: flex;
+  align-items: center;
+
   color: $text-color-light;
   font-size: 34px;
   font-weight: 500;
