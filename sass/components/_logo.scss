@@ -3,14 +3,9 @@
   font-family: $logo-font, sans-serif;
   font-size: $logo-font-size;
   font-weight: 700;
-  line-height: 1.174;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   text-decoration: none;
-
-  @media screen and (min-width: $tablet) {
-    font-size: $logo-font-size;
-    line-height: 1.166;
-  }
 
   @media screen and (min-width: $desktop) {
     font-size: $desktop-logo-font-size;
