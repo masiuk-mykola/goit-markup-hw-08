@@ -409,7 +409,7 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  z-index: 2;
+  z-index: 20;
 }
 .menu-button:hover, .menu-button:focus {
   fill: #2196f3;
@@ -445,6 +445,7 @@ body {
     width: 480px;
     height: 796px;
     background-color: #fff;
+    z-index: 10;
   }
 }
 @media screen and (min-width: 768px) {
